@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.landing-page {
+  display: flex;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
+.landing-page img {
+  width: 100%;
+}
+.landing-page .blue-bg {
+  background-color: #2e4dd4;
+  flex-basis: 15%;
+  border-radius: 2rem 0rem 0rem 2rem;
+}
+.landing-page .blue-bg .logo {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+.landing-page .gray-bg {
+  background-color: #f5f6fa;
+  flex-basis: 85%;
+}
+.landing-page .gray-bg .logins {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  margin: 2rem 0rem;
+}
+.landing-page .gray-bg .logins .forms {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 2rem;
+}
+.landing-page .gray-bg .logins .forms .custom-btn {
+  background-color: #fff;
+  border: 0;
+}
+.landing-page .gray-bg .gray-container {
+  display: flex;
+  justify-content: space-around;
+}
+.landing-page .gray-bg .left-gray-bg {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: flex-start;
+  padding: 0rem 1rem;
+}
+.landing-page .gray-bg .left-gray-bg h1 {
+  font-size: 4rem;
+  font-weight: bolder;
+}
+.landing-page .gray-bg .left-gray-bg h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.landing-page .gray-bg .left-gray-bg p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.landing-page .gray-bg .right-gray-bg {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+
+form input {
+  background-color: #f5f5f5;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  height: 3rem;
+  padding: 0 1rem;
+  color: black;
+}
+
+form button {
+  border-radius: 12px;
+  border: 1px solid #707070;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #2e4dd4;
+  color: #fff;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+  padding: 1rem 2rem;
+}
+form button a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 900;
+}
+
+form input::placeholder {
+  color: #000;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .landing-page {
+    flex-direction: column;
+  }
+  .landing-page .blue-bg {
+    border-radius: 0rem 0rem 2rem 2rem;
+  }
+  .landing-page .gray-bg .gray-container {
+    flex-direction: column;
+  }
+  .landing-page .gray-bg .left-gray-bg h1 {
+    font-size: 2rem;
+  }
+}

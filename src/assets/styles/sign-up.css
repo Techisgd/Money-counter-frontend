@@ -1,0 +1,91 @@
+.sign-up {
+  display: flex;
+  flex: 1;
+  height: 100vh;
+  width: 100%;
+}
+.sign-up .blue-bg {
+  flex-basis: 15%;
+  display: flex;
+  justify-content: center;
+  background-color: #2E4DD4;
+  border-radius: 2rem 0rem 0rem 2rem;
+}
+.sign-up .blue-bg .logo {
+  padding: 2rem 0rem;
+}
+.sign-up .sign-up-form {
+  flex-basis: 85%;
+  background-color: #f5f6fa;
+  display: flex;
+  justify-content: center;
+}
+.sign-up .title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.sign-up .description {
+  font-size: 1rem;
+  margin: 1rem 0 1.5rem 0;
+  line-height: 1.6;
+  letter-spacing: 1.5px;
+}
+.sign-up .form-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  width: 40%;
+  padding: 30px 60px;
+  margin-bottom: auto;
+  margin-top: 4rem;
+  border-radius: 8px;
+  box-shadow: 0 0 14px #fff;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media screen and (max-width: 600px) {
+  .sign-up {
+    flex-direction: column;
+  }
+  .sign-up .blue-bg {
+    border-radius: 0rem 0rem 2rem 2rem;
+    -webkit-border-radius: 0rem 0rem 2rem 2rem;
+    -moz-border-radius: 0rem 0rem 2rem 2rem;
+    -ms-border-radius: 0rem 0rem 2rem 2rem;
+    -o-border-radius: 0rem 0rem 2rem 2rem;
+}
+.sign-up .form-container {
+  width: 95%;
+}
+  .sign-up .title {
+    font-size: 2rem;
+    max-width: 350px;
+    line-height: 1.2;
+  }
+  .sign-up .description {
+    font-size: 1rem;
+    margin: 1rem 0 2.5rem 0;
+  }
+  .sign-up .form-container {
+    max-width: 350px;
+    padding: 20px 50px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .sign-up .title {
+    font-size: 1.5rem;
+    max-width: 250px;
+    line-height: 1.2;
+  }
+  .sign-up .description {
+    font-size: 1rem;
+    margin: 1rem 0 2rem 0;
+  }
+  .sign-up .form-container {
+    max-width: 310px;
+    padding: 20px 40px;
+  }
+}
